@@ -1,0 +1,22 @@
+.dashboard-card {
+    background-color: #fff;
+    padding: 10px;
+    margin: 1%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.dashboard-card-progress {
+    font-style: italic;
+    font-weight: bold;
+    color: #db1f32;
+    cursor: default;
+}
+
+.dashboard-card:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+

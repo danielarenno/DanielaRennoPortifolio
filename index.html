@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body class="is-preload">
@@ -18,7 +19,7 @@
 	<!-- Nav -->
 	<nav id="nav">
 		<ul class="container">
-			<li><a href="#top">Me</a></li>
+			<li><a href="#top">Home</a></li>
 			<li><a href="#work">Experience</a></li>
 			<li><a href="#portfolio">Portfolio</a></li>
 			<li><a href="#contact">Contact</a></li>
@@ -29,7 +30,11 @@
 	<article id="top" class="wrapper style3">
 		<div class="container ">
 			<header>
-				<h1>Hi. I'm <strong>Daniela Renno</strong>.</h1>
+				<div class="row">
+					<h1>Hi, I'm <strong>Daniela Renno</strong> </h1>
+					<span class="icon solid featured fa-smile-beam"></span>
+				</div>
+
 			</header>
 			<div class="row">
 				<p>
@@ -54,20 +59,20 @@
 	<article id="work" class="wrapper style2">
 		<div class="container">
 			<header>
-				<h2>My previous experience</h2>
+				<h2>My experience</h2>
 				<p>Expertise in requirements gathering, solution modeling, and system integration, bridging technology
 					and business to deliver strategic value.</p>
 			</header>
 			<div class="row aln-center">
-				<div class="col-4 col-6-medium col-12-small">
+				<div class="col-3 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon solid featured fa-database"></span>
-						<!-- <span class="icon featured fa-comments"></span> -->
-						<h3>Oracle Developer</h3>
-						<p>Experience in PL/SQL development and data modeling.</p>
+						<span class="icon solid featured fa-chart-line"></span>
+						<h3>Data Analytics</h3>
+						<p>Learning Power BI, Python, Pandas and others libraries.</p>
 					</section>
 				</div>
-				<div class="col-4 col-6-medium col-12-small">
+
+				<div class="col-3 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon solid featured fa-user"></span>
 						<h3>Product Owner</h3>
@@ -75,16 +80,26 @@
 						</p>
 					</section>
 				</div>
-				<div class="col-4 col-6-medium col-12-small">
+
+				<div class="col-3 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="icon solid featured fa-database"></span>
+						<!-- <span class="icon featured fa-comments"></span> -->
+						<h3>Database Developer</h3>
+						<p>Hands-on experience in data modeling with Oracle (PL/SQL), MySQL, and MongoDB.</p>
+					</section>
+				</div>
+
+				<div class="col-3 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon solid featured fa-code"></span>
 						<h3>Web Developer</h3>
-						<p>Knowledge of JavaScript, Angular, Node.js. Learning Python and libraries.</p>
+						<p>Knowledge of JavaScript, Angular, Node.js.</p>
 					</section>
 				</div>
 			</div>
 			<footer>
-				<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+				<a href="#portfolio" class="button large scrolly">My portfolio</a>
 			</footer>
 		</div>
 	</article>
@@ -96,31 +111,24 @@
 				<h2>My Portfolio as Data Analyst</h2>
 				<!-- <p>Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.</p> -->
 			</header>
-			<div class="row">
-				<div class="col-6 col-6-medium col-12-small">
-					<article class="box style2">
-
+			<div class="row aln-center">
+				<div class="col-5 col-6-medium col-12-small dashboard-card"
+					onclick="window.location.href='dashboard_ibm.html';">
+					<article class="box style2 ">
 						<h3><a href="dashboard_ibm.html">My first Dashboard</a></h3>
 						<p>Final Capstone - IBM Certificate Data Analyst</p>
 					</article>
 				</div>
-				<div class="col-6 col-6-medium col-12-small">
+				<div class="col-5 col-6-medium col-12-small dashboard-card dashboard-card-progress">
 					<article class="box style2">
-						<!-- <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a> -->
-						<h3><a href="#">Power BI</a></h3>
-						<p><span class="icon solid fa-chart-line" style="margin-right: 8px;"></span>In progress</p>
+						<h3>Power BI</h3>
+						<p><span class="icon solid fa-chart-line" style="margin-right: 8px;"></span>In progress
+						</p>
 					</article>
 				</div>
-				<!-- <div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-						<h3><a href="#">Lorem ipsum</a></h3>
-						<p>Ornare nulla proin odio consequat.</p>
-					</article>
-				</div> -->
 			</div>
 			<footer>
-				<a href="#contact" class="button large scrolly">Get in touch with me</a>
+				<a href="#contact" class="button large scrolly">Let’s connect!</a>
 			</footer>
 		</div>
 	</article>
@@ -131,14 +139,17 @@
 			<div class="row">
 				<div class="col-12">
 					<hr />
-					<h3>Find me on ...</h3>
+					<h3>Reach me on </h3>
+					<span class="icon regular featured fa-message"></span>
 					<ul class="social">
 						<li><a href="https://www.linkedin.com/in/danielarenno/" target="_blank"
 								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+
 						<li><a href="mailto:daniela.renno@gmail.com" target="_blank"
-								class="icon brands fa-google-plus"><span class="label">Gmail</span></a></li>
-						<li><a href="https://github.com/RennoDani" target="_blank" class="icon brands fa-github"><span
-									class="label">Github</span></a></li>
+								class="icon solid fa-envelope"><span class="label">Gmail</span></a></li>
+
+						<li><a href="https://github.com/RennoDani" target="_blank" 
+							    class="icon brands fa-github"><span class="label">Github</span></a></li>
 					</ul>
 					<hr />
 				</div>
